@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">스마트자전거</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="cp_name">Copyright(C) 2016. Team IO ARR</string>
+    <string name="cp_call">Contact: teamio@gmail.com</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:paddingTop="36dp"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LED 연결"
+        android:id="@+id/led_switch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:switchMinWidth="50dp"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/led_switch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/led_group">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#4b4b4b"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기본"
+                android:id="@+id/led_default"
+                android:textSize="20dp"
+                android:checked="false"
+                android:enabled="false"
+                android:singleLine="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#4b4b4b"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="길게"
+                android:id="@+id/led_long"
+                android:textSize="20dp"
+                android:checked="false"
+                android:enabled="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#4b4b4b"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="짧게"
+                android:id="@+id/led_short"
+                android:textSize="20dp"
+                android:checked="false"
+                android:enabled="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#4b4b4b"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용자 패턴"
+                android:id="@+id/led_user"
+                android:textSize="20dp"
+                android:checked="false"
+                android:enabled="false" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#4b4b4b"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

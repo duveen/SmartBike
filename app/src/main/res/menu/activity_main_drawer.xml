@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_home_icon"
+            android:src="@drawable/loading_splash"/>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_smartbike"
+            android:title="스마트자전거" />
+        <item
+            android:id="@+id/nav_sppedmeter"
+            android:icon="@drawable/ic_menu_speed_meter"
+            android:title="속도계" />
+        <item
+            android:id="@+id/nav_connect_led"
+            android:icon="@drawable/ic_menu_led_connector"
+            android:title="LED 컨트롤" />
+        <item
+            android:id="@+id/nav_analytic_ride"
+            android:icon="@drawable/ic_menu_send"
+            android:title="주행분석" />
+        <item
+            android:id="@+id/nav_connect_sensor"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="센서연결" />
+    </group>
+
+
+    <group
+        android:id="@+id/copyright"
+        android:visible="true"
+        >
+        <item
+            android:id="@+id/cp_name"
+            android:title="@string/cp_name" />
+        <item
+            android:id="@+id/cp_call"
+            android:title="@string/cp_call" />
+    </group>
+
+
+</menu>
